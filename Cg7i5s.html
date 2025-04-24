@@ -1,0 +1,185 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script> 			const sP3d10 = "1 2 F1b F12 F1e 3 5 F2b F2e 6 7 F3b F3e 8 F4b F42 F4e 9 11 12 6 7 F3b F34 F3e 8 F4b F42 F4e 9 11 12 6 7 F3b F34 F3e 8 F4b F4e 9 11 12 13"; 		</script> 	</head> 	<body oncontextmenu="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> C 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Cf0i/Cf0i0.html'>C 프로그래밍 시작</a></li><li><a href='../Cf1i/Cf1i0.html'>출력</a></li><li><a href='../Cf2i/Cf2i0.html'>입력</a></li><li><a href='../Cf3i/Cf3i0.html'>변수</a></li><li><a href='../Cf4i/Cf4i0.html'>연산자</a></li><li><a href='../Cf5i/Cf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Cf6i/Cf6i0.html'>선택문(if)</a></li><li><a href='../Cf7i/Cf7i0.html'>반복문(while)</a></li><li><a href='../Cf8i/Cf8i0.html'>반복문(for)</a></li><li><a href='../Cf9i/Cf9i0.html'>배열</a></li><li><a href='../Cg0i/Cg0i0.html'>문자열</a></li><li><a href='../Cg1i/Cg1i0.html'>함수</a></li><li><a href='../Cg2i/Cg2i0.html'>재귀함수</a></li><li><a href='../Cg3i/Cg3i0.html'>포인터</a></li><li><a href='../Cg4i/Cg4i0.html'>파일입출력</a></li><li><a href='../Cg5i/Cg5i0.html'>열거형/구조체/동적할당</a></li><li><a href='../Cg6i/Cg6i0.html'>함수 자료 전달</a></li><li><a href='../Cg7i/Cg7i0.html'>전처리/파일분할</a></li><ul><li><a href='../Cg7i/Cg7i1.html'>색깔 심리테스트</a></li><li><a href='../Cg7i/Cg7i2.html'>가위바위보</a></li><li><a href='../Cg7i/Cg7i3.html'>원둘레 원면적</a></li><li><a href='../Cg7i/Cg7i4.html'>공 찾기</a></li><li><a href='../Cg7i/Cg7i5.html'>캐릭터 이동</a></li><ul><li><a href='Cg7i5.html'>코드읽기</a></li><li><a href='Cg7i5a.html'>알고리즘</a></li><li><a href='Cg7i5k.html'>키워드</a></li><li><a href='Cg7i5b.html'>빈칸채우기</a></li><li><a href='Cg7i5s.html'>실행순서</a></li><li><a href='Cg7i5m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/C/blob/main/Chapter17/Main.c' target='code'>소스코드</a></li></ul></ul></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>캐릭터를 WASD키를 이용하여 상하좌우로 이동시키는 문제입니다 실행순서를 클릭하세요 <pre style='font-family:monospace;line-height:1;'>
+--------- 파일 mazemap1.txt의 내용 --------- 
+111111111
+120010003
+111010111
+100010001
+101111101
+100000001
+111111111
+--------- 파일 mazemap2.txt의 내용 --------- 
+1111111111111111111111111
+1200000516000000170000001
+1000000010000000100000001
+1000000010000000100000001
+1111011111115111111181111
+0000000000000000000000043
+1111711111119111111161111
+1000000410000000100000001
+1000000010000000100000001
+1000000010000008190000001
+1111111111111111111111111
+--------- 파일 mazemap3.txt의 내용 --------- 
+11000000000000000000000000000000000000000000000000000000
+02000000000000000000000000000004000000000000000000000000
+11111111100000000000000000011111100000000000000000000000
+00000000000000000000000000000000000000000000000000000003
+00000000111110000011111111110000000111111111100001111111
+40000000000000000000000000000000000000000000000000040000
+11111111100011111111111111111111111110000000111111111000
+</pre></pre> 				<pre class='selectable'>파일이름을 입력하세요: <b><span style='color:rgb(255,0,0);'>C:\Users\user\Downloads\mazemap1.txt</span></b>
+    
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>                  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span><span style='font-family:monospace;'>옷</span>    <span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>          </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>                  </span></div>
+WASD와 [Enter]를 입력하세요: <b><span style='color:rgb(255,0,0);'>D</span></b>
+    
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>                  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;'>옷</span>  <span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>          </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>                  </span></div>
+WASD와 [Enter]를 입력하세요: <b><span style='color:rgb(255,0,0);'>D</span></b>
+    
+<div style='font-family:monospace;line-height:1;'><span style='font-family:monospace;background-color:skyblue'>                  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>    <span style='font-family:monospace;'>옷</span><span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;color:skyblue;'>문</span>
+<span style='font-family:monospace;background-color:skyblue'>      </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>      </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>      <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>  <span style='font-family:monospace;background-color:skyblue'>          </span>  <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>  </span>              <span style='font-family:monospace;background-color:skyblue'>  </span>
+<span style='font-family:monospace;background-color:skyblue'>                  </span></div>
+WASD와 [Enter]를 입력하세요: <b><span style='color:rgb(255,0,0);'>Q</span></b>
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	#include &lt;stdio.h&gt;
+</pre><pre id="code0" class="unselectable codeClass">	#include "Character.h"
+</pre><pre id="code0" class="unselectable codeClass">	#include "Map.h"
+
+</pre><pre id="code0" class="unselectable codeClass">	extern int height;
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('1')">1	int main() {
+</pre><pre id="code0" class="unselectable codeClass">		printf( "파일이름을 입력하세요: " );
+</pre><pre id="code0" class="unselectable codeClass">		char filename[100]="";
+</pre><pre id="code0" class="unselectable codeClass">		scanf( "%s", filename );
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2		if ( readMap( filename )
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3		                        == FALSE )
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('4')">4			return FALSE;
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('5')">5		writeMap();
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">		char direction='w';
+</pre><pre id="code0" class="unselectable codeClass">		int row = 1, column = 1;
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('6')">6		do {
+</pre><pre id="code0" class="unselectable codeClass">			printf( " \033[%d;%df  ", row+1, column*2+1 );
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('7')">7			move( direction, &row, &column );
+</pre><pre id="code0" class="unselectable codeClass">			printf(" \033[%d;%df옷", row + 1, column * 2 + 1 );
+
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('8')">8			if( finish( row, column )
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('9')">9			                         == TRUE ) {
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('10')">10				break;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			printf( " \033[%d;1f \033[2KWASD와[Enter]를 입력하세요: ", height + 2 );
+</pre><pre id="code0" class="unselectable codeClass">			fflush( stdin );
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('11')">11			scanf( "\n%c", &direction);
+</pre><pre id="code12" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('12')">12		} while ( ( direction == 'W' ) || ( direction == 'A' ) || ( direction == 'S' ) || ( direction == 'D' )
+</pre><pre id="code0" class="unselectable codeClass">		       || ( direction == 'w' ) || ( direction == 'a' ) || ( direction == 's' ) || ( direction == 'd' ) );
+
+</pre><pre id="code13" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('13')">13		return 0;
+</pre><pre id="code0" class="unselectable codeClass">	}
+
+</pre><pre id="code0" class="unselectable codeClass">	#ifndef _MAP_H_
+</pre><pre id="code0" class="unselectable codeClass">	#define _MAP_H_
+
+</pre><pre id="code0" class="unselectable codeClass">	#define FALSE 0
+</pre><pre id="code0" class="unselectable codeClass">	#define TRUE  1
+
+</pre><pre id="code0" class="unselectable codeClass">	int map[100][100];
+</pre><pre id="code0" class="unselectable codeClass">	int width, height;
+
+</pre><pre id="code0" class="unselectable codeClass">	int readMap(char* filename);
+</pre><pre id="code0" class="unselectable codeClass">	void writeMap();
+
+</pre><pre id="code0" class="unselectable codeClass">	#endif
+
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="code0" class="unselectable codeClass">	#include &lt;stdio.h&gt;
+</pre><pre id="code0" class="unselectable codeClass">	#include &lt;string.h&gt;
+</pre><pre id="code0" class="unselectable codeClass">	#include "Map.h"
+
+</pre><pre id="code0" class="unselectable codeClass">	extern int map[100][100];
+</pre><pre id="code0" class="unselectable codeClass">	extern int width, height;
+
+</pre><pre id="codeF1b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F1b')">F1b	int readMap( char *filename ) {
+</pre><pre id="code0" class="unselectable codeClass">		FILE *inFile = NULL;
+</pre><pre id="code0" class="unselectable codeClass">		if ( ( inFile = fopen( filename, "rt" ) ) == NULL ) {
+</pre><pre id="code0" class="unselectable codeClass">			printf( "[오류] 파일을 열 수 없습니다!" );
+</pre><pre id="codeF11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F11')">F11			return FALSE;
+</pre><pre id="code0" class="unselectable codeClass">		}
+
+</pre><pre id="code0" class="unselectable codeClass">		for ( char line[1024] = ""; fgets( line, 100, inFile ) != NULL; height++ ) {
+</pre><pre id="code0" class="unselectable codeClass">			if ( strlen( line ) &lt; 3 ) {
+</pre><pre id="code0" class="unselectable codeClass">				break;
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			else {
+</pre><pre id="code0" class="unselectable codeClass">				for( width = 0; ( width &lt; strlen( line ) ) && ( '0' &lt;= line[width] ) && ( line[width] &lt;= '9' ); width++ )
+</pre><pre id="code0" class="unselectable codeClass">					map[height][width] = line[width] - '0';
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">		}
+
+</pre><pre id="code0" class="unselectable codeClass">		fclose( inFile );
+</pre><pre id="codeF12" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F12')">F12		return TRUE;
+</pre><pre id="codeF1e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F1e')">F1e	}
+
+</pre><pre id="codeF2b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F2b')">F2b	void writeMap() {
+</pre><pre id="code0" class="unselectable codeClass">		char symbol[10][1024] = { "  ", " \033[44m   \033[0m", "옷", " \033[34m문 \033[0m", " \033[31m♥ \033[0m", " \033[33m★ \033[0m", " \033[32m♣ \033[0m", " \033[31m♠ \033[0m", " \033[36m◆ \033[0m", " \033[35m■ \033[0m" };
+</pre><pre id="code0" class="unselectable codeClass">		printf(" \033[2K \033[1;1f");
+</pre><pre id="code0" class="unselectable codeClass">		for ( int row = 0; row &lt; height; row++ ) {
+</pre><pre id="code0" class="unselectable codeClass">			for ( int column = 0; column &lt; width; column++ )
+</pre><pre id="code0" class="unselectable codeClass">				printf( "%s", symbol[map[row][column]] );
+</pre><pre id="code0" class="unselectable codeClass">			printf( "\n" );
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="codeF2e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F2e')">F2e	}
+
+</pre><pre id="code0" class="unselectable codeClass">	#ifndef _CHARACTER_H_
+</pre><pre id="code0" class="unselectable codeClass">	#define _CHARACTER_H_
+
+</pre><pre id="code0" class="unselectable codeClass">	void move( char direction, int *row, int *column );
+</pre><pre id="code0" class="unselectable codeClass">	int finish( int row, int column );
+
+</pre><pre id="code0" class="unselectable codeClass">	#endif
+
+</pre><pre id="code0" class="unselectable codeClass">	#include &lt;stdio.h&gt;
+</pre><pre id="code0" class="unselectable codeClass">	#include "Character.h"
+</pre><pre id="code0" class="unselectable codeClass">	#include "Map.h"
+
+</pre><pre id="code0" class="unselectable codeClass">	extern int map[100][100];
+</pre><pre id="code0" class="unselectable codeClass">	extern int width, height;
+
+</pre><pre id="code0" class="unselectable codeClass">	#define WALL 1
+</pre><pre id="code0" class="unselectable codeClass">	#define EXIT 3
+</pre><pre id="code0" class="unselectable codeClass">		
+</pre><pre id="codeF3b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F3b')">F3b	void move( char direction, int *row, int *column ) {
+</pre><pre id="code0" class="unselectable codeClass">		if ( ( ( direction == 'w' ) || ( direction == 'W' ) ) && ( *row &gt; 0 ) && ( map[ *row-1 ][ *column ] != WALL ) )
+</pre><pre id="codeF31" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F31')">F31			*row = *row-1;
+</pre><pre id="code0" class="unselectable codeClass">		else if ( ( ( direction == 'a' ) || ( direction == 'A' ) ) && ( *column &gt; 0 ) && ( map[ *row ][ *column-1 ] != WALL ) )
+</pre><pre id="codeF32" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F32')">F32			*column = *column-1;
+</pre><pre id="code0" class="unselectable codeClass">		else if ( ( ( direction == 's' ) || ( direction == 'S' ) ) && ( *row &lt; ( height-1 ) ) && ( map[ *row+1 ][ *column ] != WALL ) )
+</pre><pre id="codeF33" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F33')">F33			*row = *row+1;
+</pre><pre id="code0" class="unselectable codeClass">		else if ( ( ( direction == 'd' ) || ( direction == 'D' ) ) && ( *column &lt; ( width-1 ) ) && ( map[ *row ][ *column+1 ] != WALL ) )
+</pre><pre id="codeF34" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F34')">F34			*column = *column+1;
+</pre><pre id="codeF3e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F3e')">F3e	}
+
+</pre><pre id="codeF4b" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F4b')">F4b	int finish( int row, int column ) {
+</pre><pre id="code0" class="unselectable codeClass">		if( map[row][column] == EXIT ) {
+</pre><pre id="code0" class="unselectable codeClass">			printf( " \033[2J \033[4;15fSUCCESS!\033[7;15f" );
+</pre><pre id="codeF41" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F41')">F41			return TRUE;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		else {
+</pre><pre id="codeF42" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F42')">F42			return FALSE;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="codeF4e" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('F4e')">F4e	}
+</pre>
+</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "sP3d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   
