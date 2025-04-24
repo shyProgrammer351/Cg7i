@@ -29,12 +29,10 @@
 </pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 프로그램 시작  </b></font>
 </pre>
 <pre id="code1" class="unselectable codeClass">1	int main() {
-</pre><pre id="code0" class="unselectable codeClass">		int ball = 0, cup = 0;
-</pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 먼저 3개 컵 중에서 하나에 공 숨기기 </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		<a href='../Cf5i/Cf5i0.html#2' target='keyword'>srand</a>( <a href='../Cf5i/Cf5i0.html#2' target='keyword'>time</a>( NULL ) );
 </pre>
-<pre id="code2" class="unselectable codeClass">2		ball = <a href='../Cf5i/Cf5i0.html#2' target='keyword'>rand</a>() <a href='../Cf4i/Cf4i0.html' target='keyword'>%</a> 3 + 1;
+<pre id="code2" class="unselectable codeClass">2		int ball = <a href='../Cf5i/Cf5i0.html#2' target='keyword'>rand</a>() <a href='../Cf4i/Cf4i0.html' target='keyword'>%</a> 3 + 1;
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 디버깅 모드에서는 공 위치를 공개</font>
 </pre>
 <pre id="code3" class="unselectable codeClass">3		#<a href='../Cg7i/Cg7i0.html#2' target='keyword'>ifdef</a> DEBUG
@@ -49,6 +47,7 @@
 </pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 사용자에게 공을 숨긴 컵 번호 입력 받기  </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		printf( " 1, 2, 3 중에서 공을 숨긴 컵을 찾으세요 <a href='../Cf5i/Cf5i0.html#2' target='keyword'>:</a> " );
+</pre><pre id="code0" class="unselectable codeClass">		int cup = 0;
 </pre>
 <pre id="code6" class="unselectable codeClass">6		scanf( "%d", &cup );
 </pre><pre id="code0" class="unselectable codeClass">			 

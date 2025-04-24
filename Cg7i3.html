@@ -20,42 +20,38 @@
 </pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 프로그램 시작 </b></font>
 </pre>
 <pre id="code3" class="unselectable codeClass">3	int main() {
-</pre><pre id="code0" class="unselectable codeClass">		double radius = 0.0;
-</pre><pre id="code0" class="unselectable codeClass">		double length = 0.0;
-</pre>
-<pre id="code4" class="unselectable codeClass">4		double area = 0.0;
-</pre><pre id="code0" class="unselectable codeClass"> 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 반지름을 입력 </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		printf( "반지름을 입력하세요: " );
+</pre><pre id="code0" class="unselectable codeClass">		double radius = 0.0;
 </pre>
-<pre id="code5" class="unselectable codeClass">5		scanf( "%lf", &radius );
+<pre id="code4" class="unselectable codeClass">4		scanf( "%lf", &radius );
 </pre><pre id="code0" class="unselectable codeClass"> 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 먼저 반지름으로 원둘레 및 원면적 계산 </b></font>
 </pre>
-<pre id="code6" class="unselectable codeClass">6		length =
+<pre id="code5" class="unselectable codeClass">5		double length =
 </pre>
-<pre id="code7" class="unselectable codeClass">7		         CIRCUMFERENCE( radius );
+<pre id="code6" class="unselectable codeClass">6		                CIRCUMFERENCE( radius );
 </pre>
-<pre id="code8" class="unselectable codeClass">8		area =
+<pre id="code7" class="unselectable codeClass">7		double area =
 </pre>
-<pre id="code9" class="unselectable codeClass">9		       CIRCULARAREA( radius );
+<pre id="code8" class="unselectable codeClass">8		              CIRCULARAREA( radius );
 </pre>
-<pre id="code10" class="unselectable codeClass">10		printf( "반지름 %.2f인 원둘레는 %.2f이고 원면적은 %.2f입니다.\n", radius, length, area );
+<pre id="code9" class="unselectable codeClass">9		printf( "반지름 %.2f인 원둘레는 %.2f이고 원면적은 %.2f입니다.\n", radius, length, area );
 </pre><pre id="code0" class="unselectable codeClass"> 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> (반지름+1)으로 원둘레 및 원면적 계산 </b></font>
 </pre>
-<pre id="code11" class="unselectable codeClass">11		length =
+<pre id="code10" class="unselectable codeClass">10		length =
 </pre>
-<pre id="code12" class="unselectable codeClass">12		         CIRCUMFERENCE( radius + 1 );
+<pre id="code11" class="unselectable codeClass">11		         CIRCUMFERENCE( radius + 1 );
 </pre>
-<pre id="code13" class="unselectable codeClass">13		area =
+<pre id="code12" class="unselectable codeClass">12		area =
 </pre>
-<pre id="code14" class="unselectable codeClass">14		       CIRCULARAREA( radius + 1 );
+<pre id="code13" class="unselectable codeClass">13		       CIRCULARAREA( radius + 1 );
 </pre>
-<pre id="code15" class="unselectable codeClass">15		printf( "반지름 ( %.2f + 1.00 )인 원둘레는 %.2f이고 원면적은 %.2f입니다.", radius, length, area);
+<pre id="code14" class="unselectable codeClass">14		printf( "반지름 ( %.2f + 1.00 )인 원둘레는 %.2f이고 원면적은 %.2f입니다.", radius, length, area);
 </pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
 </pre>
-<pre id="code16" class="unselectable codeClass">16		return 0;
+<pre id="code15" class="unselectable codeClass">15		return 0;
 </pre><pre id="code0" class="unselectable codeClass">	}
 </pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:65px;width:540px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 

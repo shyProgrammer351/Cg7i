@@ -26,10 +26,8 @@
 #<input id='blank3' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(3)'> DEBUG 
  
 int main() { 
-	int ball = 0, cup = 0; 
-	 
 	<input id='blank4' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(4)'>( <input id='blank5' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(5)'>( NULL ) ); 
-	ball = <input id='blank6' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(6)'>() <input id='blank7' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(7)'> 3 + 1; 
+	int ball = <input id='blank6' type='text' required minlength='1' maxlength='30' size='4' onchange='sP3f6(6)'>() <input id='blank7' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(7)'> 3 + 1; 
 	#<input id='blank8' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(8)'> DEBUG 
 	printf( " \033[8;1f [DEBUG] 공 위치 %d \033[1;1f", ball); 
 	#<input id='blank9' type='text' required minlength='1' maxlength='30' size='5' onchange='sP3f6(9)'>  
@@ -39,6 +37,7 @@ int main() {
 	printf( " | 1 |  | 2 |  | 3 | \n\n\n\n" ); 
  
 	printf( " 1, 2, 3 중에서 공을 숨긴 컵을 찾으세요 <input id='blank10' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(10)'> " ); 
+	int cup = 0; 
 	scanf( "%d", &cup ); 
 		 
 	printf( " \033[4;%dfO\n \033[5;%df", ball*7-3, cup*7-5 ); 

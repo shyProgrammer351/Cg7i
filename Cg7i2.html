@@ -29,19 +29,19 @@ A양과 B군이 비겼습니다.
 </pre>
 <pre id="codeF1" class="unselectable codeClass">F1	#<a href='../Cg7i/Cg7i0.html' target='keyword'>define</a> DoesPlayerAWin( playerA, playerB )
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> A양이 가위이고 B군이 보를 낸 경우 </b></font>
-</pre><pre id="code0" class="unselectable codeClass">		( ( ( playerA == SCISSOR ) && ( playerB == PAPER ) )
+</pre><pre id="code0" class="unselectable codeClass">		( ( ( playerA <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> SCISSOR ) <a href='../Cf4i/Cf4i0.html#2' target='keyword'>&&</a> ( playerB <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> PAPER ) )
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> A양이 바위이고 B군이 가위를 낸 경우 </b></font>
-</pre><pre id="code0" class="unselectable codeClass">			|| ( ( playerA == ROCK ) && ( playerB == SCISSOR ) )
+</pre><pre id="code0" class="unselectable codeClass">			<a href='../Cf4i/Cf4i0.html#2' target='keyword'>||</a> ( ( playerA <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> ROCK ) <a href='../Cf4i/Cf4i0.html#2' target='keyword'>&&</a> ( playerB <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> SCISSOR ) )
 </pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> A양이 보이고 B군이 바위를 낸 경우 </b></font>
-</pre><pre id="code0" class="unselectable codeClass">			|| ( ( playerA == PAPER ) && ( playerB == ROCK ) ) )
+</pre><pre id="code0" class="unselectable codeClass">			<a href='../Cf4i/Cf4i0.html#2' target='keyword'>||</a> ( ( playerA <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> PAPER ) <a href='../Cf4i/Cf4i0.html#2' target='keyword'>&&</a> ( playerB <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> ROCK ) ) )
 </pre><pre id="code0" class="unselectable codeClass">		<a href='../Cf5i/Cf5i0.html#2' target='keyword'>?</a> TRUE : FALSE
 </pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 가위바위보 선택 함수 </b></font>
 </pre>
 <pre id="codeF2b" class="unselectable codeClass">F2b	int getRockPaperScissors() {
-</pre><pre id="code0" class="unselectable codeClass">		int player = 0;
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 사용자가 가위바위보중 하나를 선택 </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		printf( "가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int player = 0;
 </pre>
 <pre id="codeF21" class="unselectable codeClass">F21		scanf( "%d", &player );
 </pre><pre id="code0" class="unselectable codeClass">	 
@@ -71,44 +71,40 @@ A양과 B군이 비겼습니다.
 </pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 프로그램 시작 </b></font>
 </pre>
 <pre id="code1" class="unselectable codeClass">1	int main() {
-</pre><pre id="code0" class="unselectable codeClass">		int playerA = SCISSOR;
-</pre>
-<pre id="code2" class="unselectable codeClass">2		int playerB = SCISSOR;
-</pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> A양 가위바위보 선택  </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		printf( "A양, " );
 </pre>
-<pre id="code3" class="unselectable codeClass">3		playerA =
+<pre id="code2" class="unselectable codeClass">2		int playerA =
 </pre>
-<pre id="code4" class="unselectable codeClass">4			  getRockPaperScissors();
+<pre id="code3" class="unselectable codeClass">3		              getRockPaperScissors();
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> B군 가위바위보 선택  </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		printf( "B군, " );
 </pre>
-<pre id="code5" class="unselectable codeClass">5		playerB =
+<pre id="code4" class="unselectable codeClass">4		int playerB =
 </pre>
-<pre id="code6" class="unselectable codeClass">6			  getRockPaperScissors();
+<pre id="code5" class="unselectable codeClass">5		              getRockPaperScissors();
 </pre><pre id="code0" class="unselectable codeClass">		 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 가위바위보 승패 출력 </b></font>
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 첫째 A양과 B군이 비김   </b></font>
 </pre>
-<pre id="code7" class="unselectable codeClass">7		<a href='../Cf6i/Cf6i0.html' target='keyword'>if</a> ( playerA == playerB )
+<pre id="code6" class="unselectable codeClass">6		<a href='../Cf6i/Cf6i0.html' target='keyword'>if</a> ( playerA <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> playerB )
 </pre>
-<pre id="code8" class="unselectable codeClass">8			printf( "\nA양과 B군이 비겼습니다.\n" );
+<pre id="code7" class="unselectable codeClass">7			printf( "\nA양과 B군이 비겼습니다.\n" );
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 둘째 A양이 승리   </b></font>
 </pre>
-<pre id="code9" class="unselectable codeClass">9		<a href='../Cf6i/Cf6i0.html' target='keyword'>else if</a> ( DoesPlayerAWin( playerA, playerB )
+<pre id="code8" class="unselectable codeClass">8		<a href='../Cf6i/Cf6i0.html' target='keyword'>else if</a> ( DoesPlayerAWin( playerA, playerB )
 </pre>
-<pre id="code10" class="unselectable codeClass">10		                                             == TRUE )
+<pre id="code9" class="unselectable codeClass">9		                                             <a href='../Cf4i/Cf4i0.html#2' target='keyword'>==</a> TRUE )
 </pre>
-<pre id="code11" class="unselectable codeClass">11			printf( "\nA양이 이겼습니다.\n" );
+<pre id="code10" class="unselectable codeClass">10			printf( "\nA양이 이겼습니다.\n" );
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 셋째 B군이 승리  </b></font>
 </pre>
-<pre id="code12" class="unselectable codeClass">12		<a href='../Cf6i/Cf6i0.html' target='keyword'>else</a>
+<pre id="code11" class="unselectable codeClass">11		<a href='../Cf6i/Cf6i0.html' target='keyword'>else</a>
 </pre>
-<pre id="code13" class="unselectable codeClass">13			printf( "\nB군이 이겼습니다.\n" );
+<pre id="code12" class="unselectable codeClass">12			printf( "\nB군이 이겼습니다.\n" );
 </pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
 </pre>
-<pre id="code14" class="unselectable codeClass">14		<a href='../Cg1i/Cg1i0.html' target='keyword'>return</a> 0;
+<pre id="code13" class="unselectable codeClass">13		<a href='../Cg1i/Cg1i0.html' target='keyword'>return</a> 0;
 </pre><pre id="code0" class="unselectable codeClass">	}
-</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:140px;width:492px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
+</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:125px;width:492px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 

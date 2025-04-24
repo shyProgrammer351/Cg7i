@@ -13,15 +13,13 @@
 #<input id='blank10' type='text' required minlength='1' maxlength='30' size='6' onchange='sP3f6(10)'> CIRCULARAREA<input id='blank11' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(11)'> r <input id='blank12' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(12)'> <input id='blank13' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(13)'> PI * <input id='blank14' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(14)'> r <input id='blank15' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(15)'> * <input id='blank16' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(16)'> r <input id='blank17' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(17)'> <input id='blank18' type='text' required minlength='1' maxlength='30' size='1' onchange='sP3f6(18)'> 		 
  
 int main() { 
-	double radius = 0.0;						 
-	double length = 0.0;	 
-	double area = 0.0;	 
 	printf( "반지름을 입력하세요: " ); 
+	double radius = 0.0;						 
 	scanf( "%lf", &radius ); 
-	length =  
-	         CIRCUMFERENCE( radius ); 
-	area =  
-	       CIRCULARAREA( radius ); 
+	double length =  
+	                CIRCUMFERENCE( radius ); 
+	double area =  
+	              CIRCULARAREA( radius ); 
 	printf( "반지름 %.2f인 원둘레는 %.2f이고 원면적은 %.2f입니다.\n", radius, length, area ); 
 	length =  
 	         CIRCUMFERENCE( radius + 1 ); 

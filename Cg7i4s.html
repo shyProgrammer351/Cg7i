@@ -12,10 +12,8 @@
 </pre><pre id="code0" class="unselectable codeClass">	#define DEBUG
 
 </pre><pre id="code1" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('1')">1	int main() {
-</pre><pre id="code0" class="unselectable codeClass">		int ball = 0, cup = 0;
-</pre><pre id="code0" class="unselectable codeClass">		
 </pre><pre id="code0" class="unselectable codeClass">		srand( time( NULL ) );
-</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2		ball = rand() % 3 + 1;
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2		int ball = rand() % 3 + 1;
 </pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3		#ifdef DEBUG
 </pre><pre id="code4" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('4')">4		printf( " \033[8;1f [DEBUG] 공 위치 %d \033[1;1f", ball);
 </pre><pre id="code5" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('5')">5		#endif
@@ -25,6 +23,7 @@
 </pre><pre id="code0" class="unselectable codeClass">		printf( " | 1 |  | 2 |  | 3 | \n\n\n\n" );
 
 </pre><pre id="code0" class="unselectable codeClass">		printf( " 1, 2, 3 중에서 공을 숨긴 컵을 찾으세요 : " );
+</pre><pre id="code0" class="unselectable codeClass">		int cup = 0;
 </pre><pre id="code6" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('6')">6		scanf( "%d", &cup );
 </pre><pre id="code0" class="unselectable codeClass">			
 </pre><pre id="code0" class="unselectable codeClass">		printf( " \033[4;%dfO\n \033[5;%df", ball*7-3, cup*7-5 );
